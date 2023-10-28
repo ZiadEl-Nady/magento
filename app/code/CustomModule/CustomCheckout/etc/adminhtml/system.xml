@@ -1,0 +1,23 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="checkout" translate="label" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+            <group id="custom_section" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Custom Checkout Settings</label>
+                <field id="enable_custom_field" translate="label comment" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable Custom Field</label>
+                    <comment>Enable or disable the custom field in the checkout.</comment>
+                    <frontend_type>select</frontend_type>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <backend_model>Magento\Config\Model\Config\Backend\Admin\All</backend_model>
+                </field>
+                <field id="enable_custom_field_validation" translate="label comment" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable Custom Field Validation</label>
+                    <comment>Enable or disable validation for the custom field in the checkout.</comment>
+                    <frontend_type>select</frontend_type>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <backend_model>Magento\Config\Model\Config\Backend\Admin\All</backend_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

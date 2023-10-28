@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="checkout.root">
+            <arguments>
+                <argument name="jsLayout" xsi:type="array">
+                    <item name="components" xsi:type="array">
+                        <item name="checkout" xsi:type="array">
+                            <item name="children" xsi:type="array">
+                                <item name="steps" xsi:type="array">
+                                    <item name="children" xsi:type="array">
+                                        <item name="your_custom_step" xsi:type="array">
+                                            <item name="component" xsi:type="string">CustomModule_CustomCheckout/js/view/your-custom-step</item>
+                                            <item name="children" xsi:type="array">
+                                                <item name="your_custom_field" xsi:type="array">
+                                                    <item name="component" xsi:type="string">CustomModule_CustomCheckout/js/view/your-custom-field</item>
+                                                    <item name="config" xsi:type="array">
+                                                        <item name="customScope" xsi:type="string">your_custom_field</item>
+                                                    </item>
+                                                    <item name="validation" xsi:type="array">
+                                                        <item name="your-validation-rule" xsi:type="string">true</item>
+                                                    </item>
+                                                </item>
+                                            </item>
+                                        </item>
+                                    </item>
+                                </item>
+                            </item>
+                        </item>
+                    </item>
+                </argument>
+            </arguments>
+        </referenceBlock>
+    </body>
+</page>
